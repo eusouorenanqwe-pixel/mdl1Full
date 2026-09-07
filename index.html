@@ -6,50 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W amigues</title>
     <style>
-        h1,h2 {
+        /* Centraliza tudo no corpo da página para facilitar a visualização no celular */
+        body {
+            text-align: center;
             font-family: helvetica;
-            font-size: 30px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            font-size: 24px; /* Diminuído ligeiramente para caber melhor na tela do celular */
             color: rgb(204, 53, 53);
         }
-        .rennzz {
-            margin-right:100px;
+
+        /* Estilo comum para as fotos dos dois personagens */
+        .rennzz, .banhass {
             border: 3px solid;
             border-radius: 16px;
+            width: 140px; /* Reduzido levemente para caberem lado a lado no celular */
+            margin: 5px;  /* Substitui as margens fixas grandes por um espaço pequeno e seguro */
         }
-        .banhass {
-            border: 3px solid;
-            border-radius: 16px;
-        }
-        .nomeRennz {
-            margin-right: 220px;
-            margin-left: 50px;
-        }
-        .span1 {
-            margin-right: 90px;
-        }
+
         .p1 {
             color: rgb(204, 53, 53);
-            font-family: helvetica;
+            margin-top: 15px;
+        }
+
+        /* Faz a imagem maior se adaptar à largura da tela do celular sem quebrar a página */
+        .img-momento {
+            width: 100%;
+            max-width: 400px;
+            border: 3px solid purple;
+            border-radius: 16px;
         }
     </style>
 </head>
 <body>
-    <h1>Quem você quer conhecer primeiro?
-    </h1>
-    <h2><span class="nomeRennz">Rennz</span> <span>Banhas</span></h2>
-    <a href="rennz.html"><img class="rennzz" src="imagens w mdl1/rennzApresentacao.jpg" alt="a" width="200px"></a>
+    <h1>Quem você quer conhecer primeiro?</h1>
 
-    <a href="banhas.html"><img class="banhass" src="imagens w mdl1/banhasApresentacaoFoto.jpg" alt="" width="200px"></a>
+    <!-- Nomes centralizados e espaçados proporcionalmente -->
+    <h2>
+        <span style="margin-right: 60px;">Rennz</span>
+        <span>Banhas</span>
+    </h2>
 
-<p class="p1">
-    <span class="span1">Rennz: o mais atacante (bola)</span>
+    <!-- Imagens dos dois amigues -->
+    <a href="rennz.html"><img class="rennzz" src="imagens w mdl1/rennzApresentacao.jpg" alt="Foto do Rennz"></a>
+    <a href="banhas.html"><img class="banhass" src="imagens w mdl1/banhasApresentacaoFoto.jpg" alt="Foto do Banhas"></a>
 
-    <span>Banhas: o mais atacante (mulher)</span>
-</p>
-<br>
-<h2 style="margin-left: 10px;">Veja alguns momentos de sua Amizade.</h2>
+    <!-- Descrições organizadas -->
+    <p class="p1">
+        <span>Rennz: o mais atacante (bola)</span><br>
+        <span>Banhas: o mais atacante (mulher)</span>
+    </p>
 
-<a href="Amigues.html"><img style="margin-left: 60px; border: 3px solid purple; border-radius: 16px;" src="imagens w mdl1/pracaFarmers.jpg" width="400px" alt=""></a>
-    <audio src="musica.mp3" autoplay ></audio>
+    <br>
+
+    <h2>Veja alguns momentos de sua Amizade.</h2>
+
+    <a href="Amigues.html"><img class="img-momento" src="imagens w mdl1/pracaFarmers.jpg" alt="Praça Farmers"></a>
+
+    <audio src="musica.mp3" autoplay></audio>
 </body>
 </html>
